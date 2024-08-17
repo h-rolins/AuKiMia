@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+
+:root{
+    --cor_primaria: #F4A261;
+    ---cor_secundária: #36BA98;
+
+    --cor_font: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho{
+    /*padding: 2% 0% 0% 10%;*/
+    padding: 2% 2% 1% 2%;
+    background-color: var(--cor_primaria);
+    color: var(--cor_font);
+}
+
+.menu_cabecalho{
+    display: flex;
+    gap: 40px;
+}
+
+.link_cabecalho{
+    font-size: 15px;
+    font-family:  "Edu AU VIC WA NT Hand", cursive;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--cor_font);
+}
+
+body{
+   /*height: 100vh;*/
+    box-sizing: border-box;
+    background-color: var(--cor_font);
+    color: var(--cor_primaria);
+}
+h1{
+    font-weight: bold;
+}
+
+.titulo{
+    color: var(---cor_secundária);
+    border: 0px solid var(---cor_secundária);
+    padding: 10px;
+}
+
+.apresentacao{
+    padding: 5% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.apresentacao__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.apresentacao__titulo{
+    font-size: 35px;
+    font-family:  "Edu AU VIC WA NT Hand", cursive;
+    font-weight: 600;
+}
+
+.apresentacao_texto{
+    font-size: 18px;
+    font-family:  "Edu AU VIC WA NT Hand", cursive;
+    font-weight: 400;
+}
+
+.apresentacao_links{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    font-family:  "Edu AU VIC WA NT Hand", cursive;
+}
+
+.titulo_links{
+    font-size: 30px;
+    font-family:  "Edu AU VIC WA NT Hand", cursive;
+    font-weight: 600;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    /* background-color: #fded03; */
+    width: 250px;
+    text-align: center;
+    border-radius: 8px;
+    border: 2px solid var(---cor_secundária);
+    font-size: 18px;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--cor_primaria);
+    margin: 5px;
+}
+
+.links:hover{
+    background-color: var(---cor_secundária);
+}
+
+.rodape{
+    background-color: var(--cor_primaria);
+    color: var(--cor_font);
+    padding: 25px;
+    text-align: center;
+    font-size: 18px;
+    font-family:  "Edu AU VIC WA NT Hand", cursive;
+}
+
+@media (max-width:1050px){
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5px;
+    }
+    .apresentacao__conteudo{
+        width: auto;
+    }
+    .cabecalho{
+        padding: 2% 2% 1% 2%;
+    }
+}
